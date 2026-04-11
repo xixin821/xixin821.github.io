@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xi Xin</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Georgia', serif;
+      color: #333;
+      background: #faf9f6;
+      line-height: 1.7;
+    }
+
+    /* Header */
+    header {
+      text-align: center;
+      padding: 60px 20px 40px;
+      background: #fff;
+      border-bottom: 3px solid #c9a96e;
+    }
+    header h1 {
+      font-size: 2.8rem;
+      letter-spacing: 0.3em;
+      font-weight: 700;
+      color: #222;
+    }
+    header p.subtitle {
+      font-size: 1rem;
+      letter-spacing: 0.25em;
+      color: #888;
+      margin-top: 6px;
+    }
+    header .contact {
+      margin-top: 20px;
+      font-size: 0.95rem;
+      color: #666;
+    }
+    header .contact a {
+      color: #666;
+      text-decoration: none;
+    }
+    header .contact a:hover { color: #c9a96e; }
+
+    /* Nav */
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 36px;
+      padding: 16px 20px;
+      background: #fff;
+      border-bottom: 1px solid #eee;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav a {
+      text-decoration: none;
+      font-size: 0.85rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: #888;
+      transition: color 0.2s;
+    }
+    nav a:hover, nav a.active { color: #c9a96e; }
+
+    /* Sections */
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+    section {
+      padding: 50px 0;
+      border-bottom: 1px solid #e8e4de;
+    }
+    section:last-child { border-bottom: none; }
+    section h2 {
+      font-size: 0.9rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #c9a96e;
+      margin-bottom: 20px;
+    }
+    section h3 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+    section .meta {
+      font-size: 0.9rem;
+      color: #999;
+      margin-bottom: 12px;
+    }
+    section p {
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 12px;
+    }
+    section ul {
+      list-style: disc;
+      padding-left: 20px;
+    }
+    section ul li {
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 6px;
+    }
+
+    /* Essay */
+    .essay-content {
+      text-align: justify;
+    }
+    .essay-content p {
+      text-indent: 2em;
+      margin-bottom: 16px;
+    }
+    .essay-content p:first-child {
+      text-indent: 0;
+    }
+    .essay-title {
+      font-size: 1.3rem;
+      font-weight: 600;
+      text-align: center;
+      margin-bottom: 24px;
+      color: #333;
+    }
+
+    /* Download buttons */
+    .download-btn {
+      display: inline-block;
+      margin-top: 16px;
+      padding: 10px 24px;
+      background: #c9a96e;
+      color: #fff;
+      text-decoration: none;
+      font-size: 0.85rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      border-radius: 3px;
+      transition: background 0.2s;
+    }
+    .download-btn:hover { background: #b5944f; }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.8rem;
+      color: #bbb;
+      background: #fff;
+      border-top: 1px solid #eee;
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 2rem; }
+      nav { gap: 18px; }
+      nav a { font-size: 0.75rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>XI XIN</h1>
+  <p class="subtitle">Viola Performance &middot; University of Colorado Boulder</p>
+  <p class="contact">
+    <a href="mailto:xinxi2023@outlook.com">xinxi2023@outlook.com</a> &nbsp;|&nbsp; +1 (303) 505-2379
+  </p>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#education">Education</a>
+  <a href="#experience">Experience</a>
+  <a href="#skills">Skills</a>
+  <a href="#writing">Writing</a>
+</nav>
+
+<div class="container">
+
+  <!-- About -->
+  <section id="about">
+    <h2>About</h2>
+    <p>
+      I'm a freshman in CU music college majoring in viola performance, and I have both music and non-musical skills.
+      I have determined and earnest personalities. I also bring an international perspective about the world through my identity as an international student.
+    </p>
+    <a href="resume.pdf" class="download-btn" target="_blank">Download Resume (PDF)</a>
+  </section>
+
+  <!-- Education -->
+  <section id="education">
+    <h2>Education</h2>
+    <h3>Viola Performance</h3>
+    <p class="meta">Bachelor of Arts, Major in Music Performance</p>
+    <p>University of Colorado Boulder &nbsp;|&nbsp; 2024 &ndash; Present</p>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience">
+    <h2>Experience</h2>
+    <h3>Viola Principal</h3>
+    <p class="meta">Province Orchestra &nbsp;|&nbsp; 2018 &ndash; 2021</p>
+    <p>
+      As the principal violist, I helped the section stay in tune and in time.
+      I guided and supported fellow musicians during rehearsals, demonstrating strong leadership skills.
+    </p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Time Management</li>
+      <li>Leadership</li>
+      <li>Bilingual &ndash; Chinese and English</li>
+      <li>Basic Piano Skills</li>
+    </ul>
+  </section>
+
+  <!-- Writing Sample -->
+  <section id="writing">
+    <h2>Sample of Work</h2>
+    <p class="essay-title">The Role of Music in Understanding and Experiencing Space</p>
+    <div class="essay-content">
+      <p>Space is often described as silent, dark, and empty. In reality, there is no sound in space because there is no air for sound waves to travel. However, even though space has no sound, music plays an important role in how humans understand and experience space. Music helps people imagine space, feel emotions about space, and connect more deeply with the universe. For these reasons, music is an important tool for exploring and communicating ideas about space.</p>
+
+      <p>First, music helps create a feeling of space. When people watch movies or documentaries about space, music is always very important. Without music, space scenes can feel empty or difficult to understand emotionally. Music adds meaning and feeling to what we see. For example, in the movie <em>Interstellar</em>, the music plays a very important role. The composer uses deep sounds, slow rhythms, and powerful dynamics to show how big and mysterious space is. The music makes the audience feel both wonder and fear. It helps people feel the beauty and danger of space, even though they are only watching a screen.</p>
+
+      <p>Second, music can help explain scientific ideas. Music and science are connected in many ways. Sound is based on vibration and frequency, which are also important concepts in physics. In music, different pitches come from different frequencies. In space science, scientists also study waves and frequencies, such as light waves and radio waves. By understanding music, people can better understand some basic scientific ideas. For example, rhythm can be compared to patterns in nature, and harmony can represent balance and structure. Using music as a tool can make complex space concepts easier to understand, especially for people who are new to science.</p>
+
+      <p>Third, music is important for human experience in space. Astronauts who live and work in space often face stress, isolation, and loneliness. Space missions can last for months, and astronauts are far away from family and friends. Music can help them relax and feel more comfortable. Listening to music can reduce stress and improve mental health. Some astronauts bring musical instruments to space. For example, astronauts have played guitar on the International Space Station. Music gives them a sense of normal life and emotional support, even in a very different environment.</p>
+
+      <p>In addition, music can be used as a way to communicate space to the public. Not everyone understands complex scientific language, but many people can understand music. Music can express ideas and emotions that are difficult to explain with words. For example, a piece of music can represent the movement of planets, the beauty of stars, or the feeling of traveling through space. This makes space more accessible and interesting to a wider audience. Through music, more people can become interested in space exploration and science.</p>
+
+      <p>Another important point is that music can connect different cultures through space. Space exploration is an international effort. Many countries work together on space missions. Music is also a universal language that people from different cultures can understand. By combining music and space, we can create a shared human experience. For example, space-themed concerts, films, or performances can bring people together and inspire global cooperation. This is important because space exploration requires teamwork between nations.</p>
+
+      <p>Music also plays a role in creativity and imagination. Space is still full of unknowns, and imagination is very important for future discoveries. Music encourages creativity and helps people think in new ways. Scientists and engineers need creativity to solve problems and design new technologies. Music can inspire new ideas and ways of thinking. In this way, music indirectly supports the development of space exploration.</p>
+
+      <p>For me, music has a personal connection to space. I have studied music for many years, and I play the viola. Through music, I can express emotions and ideas that are difficult to describe with words. When I think about space, I imagine deep, long sounds and quiet moments, like the feeling of floating in the universe. I believe that music can help people feel closer to space, even if they have never been there. In the future, I hope to combine music and space in creative ways, such as composing music inspired by space or using music to help people learn about space.</p>
+
+      <p>Some people may think that music is not important for space exploration because it is not scientific or technical. However, this view is limited. Space exploration is not only about technology and data; it is also about human experience and understanding. Music helps us connect emotionally with space, which is just as important as scientific knowledge. Without this emotional connection, people may not feel interested or inspired to support space exploration.</p>
+
+      <p>In conclusion, music plays an important role in understanding and experiencing space. It helps create emotional connections, explains scientific ideas, supports astronauts, and communicates space to the public. Music also encourages creativity and connects people from different cultures. Even though space itself is silent, music allows us to give it meaning and feeling. By combining music and space, we can better understand the universe and our place in it.</p>
+    </div>
+    <a href="sample-of-work.pdf" class="download-btn" target="_blank">Download Full Essay (PDF)</a>
+  </section>
+
+</div>
+
+<footer>
+  &copy; 2026 Xi Xin
+</footer>
+
+</body>
+</html>
