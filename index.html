@@ -13,7 +13,6 @@
       line-height: 1.7;
     }
 
-    /* Header */
     header {
       text-align: center;
       padding: 60px 20px 40px;
@@ -43,7 +42,6 @@
     }
     header .contact a:hover { color: #c9a96e; }
 
-    /* Nav */
     nav {
       display: flex;
       justify-content: center;
@@ -63,9 +61,8 @@
       color: #888;
       transition: color 0.2s;
     }
-    nav a:hover, nav a.active { color: #c9a96e; }
+    nav a:hover { color: #c9a96e; }
 
-    /* Sections */
     .container {
       max-width: 800px;
       margin: 0 auto;
@@ -108,17 +105,9 @@
       margin-bottom: 6px;
     }
 
-    /* Essay */
-    .essay-content {
-      text-align: justify;
-    }
-    .essay-content p {
-      text-indent: 2em;
-      margin-bottom: 16px;
-    }
-    .essay-content p:first-child {
-      text-indent: 0;
-    }
+    .essay-content { text-align: justify; }
+    .essay-content p { text-indent: 2em; margin-bottom: 16px; }
+    .essay-content p:first-child { text-indent: 0; }
     .essay-title {
       font-size: 1.3rem;
       font-weight: 600;
@@ -127,7 +116,22 @@
       color: #333;
     }
 
-    /* Download buttons */
+    .report-block {
+      margin-bottom: 28px;
+    }
+    .report-block h4 {
+      font-size: 0.85rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #c9a96e;
+      margin-bottom: 8px;
+    }
+    .report-block .info-row {
+      font-size: 0.95rem;
+      color: #666;
+      margin-bottom: 4px;
+    }
+
     .download-btn {
       display: inline-block;
       margin-top: 16px;
@@ -143,7 +147,6 @@
     }
     .download-btn:hover { background: #b5944f; }
 
-    /* Footer */
     footer {
       text-align: center;
       padding: 30px 20px;
@@ -155,7 +158,7 @@
 
     @media (max-width: 600px) {
       header h1 { font-size: 2rem; }
-      nav { gap: 18px; }
+      nav { gap: 18px; flex-wrap: wrap; }
       nav a { font-size: 0.75rem; }
     }
   </style>
@@ -175,22 +178,18 @@
   <a href="#education">Education</a>
   <a href="#experience">Experience</a>
   <a href="#skills">Skills</a>
+  <a href="#community">Community</a>
   <a href="#writing">Writing</a>
 </nav>
 
 <div class="container">
 
-  <!-- About -->
   <section id="about">
     <h2>About</h2>
-    <p>
-      I'm a freshman in CU music college majoring in viola performance, and I have both music and non-musical skills.
-      I have determined and earnest personalities. I also bring an international perspective about the world through my identity as an international student.
-    </p>
+    <p>I'm a freshman in CU music college majoring in viola performance, and I have both music and non-musical skills. I have determined and earnest personalities. I also bring an international perspective about the world through my identity as an international student.</p>
     <a href="resume.pdf" class="download-btn" target="_blank">Download Resume (PDF)</a>
   </section>
 
-  <!-- Education -->
   <section id="education">
     <h2>Education</h2>
     <h3>Viola Performance</h3>
@@ -198,18 +197,13 @@
     <p>University of Colorado Boulder &nbsp;|&nbsp; 2024 &ndash; Present</p>
   </section>
 
-  <!-- Experience -->
   <section id="experience">
     <h2>Experience</h2>
     <h3>Viola Principal</h3>
     <p class="meta">Province Orchestra &nbsp;|&nbsp; 2018 &ndash; 2021</p>
-    <p>
-      As the principal violist, I helped the section stay in tune and in time.
-      I guided and supported fellow musicians during rehearsals, demonstrating strong leadership skills.
-    </p>
+    <p>As the principal violist, I helped the section stay in tune and in time. I guided and supported fellow musicians during rehearsals, demonstrating strong leadership skills.</p>
   </section>
 
-  <!-- Skills -->
   <section id="skills">
     <h2>Skills</h2>
     <ul>
@@ -220,7 +214,30 @@
     </ul>
   </section>
 
-  <!-- Writing Sample -->
+  <section id="community">
+    <h2>Community Service</h2>
+    <p class="essay-title" style="font-size:1.15rem; margin-bottom:20px;">Chamber Orchestra Concert &mdash; Grusin Hall</p>
+
+    <div class="report-block">
+      <h4>Event Details</h4>
+      <p class="info-row"><strong>Date:</strong> March 5, 2026</p>
+      <p class="info-row"><strong>Location:</strong> Grusin Hall, Imig Music Building, CU Boulder</p>
+      <p class="info-row"><strong>Organizer:</strong> Chamber Orchestra / Music Faculty</p>
+    </div>
+
+    <div class="report-block">
+      <h4>Description</h4>
+      <p>I participated in a Chamber Orchestra concert as a violist. During this event, I performed classical music for the local community and members of the music college. The concert was successful and well-organized. I chose this activity because music is my major, and I want to use my skills to serve others. Through this performance, I was able to bring enjoyment and emotional connection to the audience. Many audience members said they were very impressed, which showed that our performance had a positive impact.</p>
+    </div>
+
+    <div class="report-block">
+      <h4>Reflection</h4>
+      <p>Before the concert, I felt excited and focused. I also felt confident because our group was very well-prepared. After the concert, I felt proud and satisfied with our performance. I also felt a stronger connection with my fellow musicians. This experience showed me that music can be a meaningful way to contribute to the community. In the future, I plan to continue participating in community service through musical performance.</p>
+    </div>
+
+    <a href="community-service.pdf" class="download-btn" target="_blank">Download Full Report (PDF)</a>
+  </section>
+
   <section id="writing">
     <h2>Sample of Work</h2>
     <p class="essay-title">The Role of Music in Understanding and Experiencing Space</p>
